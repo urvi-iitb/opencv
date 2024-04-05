@@ -19,6 +19,7 @@ cv.rectangle(blank,(0,0),((blank.shape[0])//2, blank.shape[1]//2),(0,255,0),thic
 cv.imshow("rect", blank)
 
 cv.circle(blank, ((blank.shape[1])//2, (blank.shape[0])//2),40,(0,0,255), thickness = -1)
+
 #image, center, radius, color and thickness 
 
 cv.imshow("circle", blank)

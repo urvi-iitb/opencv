@@ -1,12 +1,12 @@
-import cv2
+import cv2 as cv
 
-capture = cv2.VideoCapture("videos/1.mp4")
+capture = cv.VideoCapture("videos/1.mp4")
 
 while True:
     isTrue, frame = capture.read()
-    cv2.imshow("Video", frame)
-    if cv2.waitKey(20) and 0xFF==ord('d'):
+    cv.imshow("Video", frame)
+    if cv.waitKey(20) and 0xFF==ord('d'):
         break
 
 capture.release()
-cv2.destroyAllWindows()
+cv.destroyAllWindows()

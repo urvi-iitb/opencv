@@ -1,6 +1,6 @@
 import cv2 as cv
 
-def rescale(frame , scale = 0.75):
+def rescale(frame , scale = 0.5):
     w = int(frame.shape[1] * scale)
     h = int(frame.shape[0] * scale)
     new_dimn = (w,h)
